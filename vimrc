@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Keep Plugin commands between vundle#begin/end.
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'Valloric/YouCompleteMe' 
 Plugin 'scrooloose/syntastic'
