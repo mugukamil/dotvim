@@ -18,6 +18,12 @@ Plugin 'scrooloose/syntastic'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'jszakmeister/vim-togglecursor'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'ervandew/supertab'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'nathanaelkane/vim-indent-guides'
+
 
 " All of your plugins must be added before the following line
 call vundle#end()
@@ -26,6 +32,7 @@ filetype plugin indent on
 
 
 let mapleader = '\<Space>'
+nnoremap <Leader>w :w<CR>
 set number
 set ruler
 syntax on
@@ -46,7 +53,7 @@ set incsearch
 set ignorecase
 set smartcase
 nmap <F4> :set hls! <cr>
-nnoremap / :set hlsearch<cr>/
+nnoremap / /
 
 " Keep more content at the bottom of the buffer
 set scrolloff=3
@@ -90,6 +97,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1 
 set fillchars+=stl:\ ,stlnc:\
 
+" Snippet expander
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippet="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 
 
